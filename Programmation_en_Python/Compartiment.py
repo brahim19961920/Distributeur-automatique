@@ -16,8 +16,8 @@ class Compartiment():
         return(self.nombre<50)
 
     #Méthode pour vérifier si on peut rendre une piéce à partir d'un compartiment
-    def AutoriserAjouterPiece(self):
-        return(self.nombre>50)
+    def AutoriserRendrePiece(self):
+        return(self.nombre>0)
 
     #Méthode pour ajouter une piéce au compartiment
     def AjouterPiece(self):
