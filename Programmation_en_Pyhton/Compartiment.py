@@ -10,20 +10,22 @@ class Compartiment():
         self.numero=numero
         self.valeur=valeur
         self.quantite=quantite
+    
+    #Méthode pour vérifier si on peut ajouter une piéce à un compartiment
+    def AutoriserAjouterPiece(self):
+        return(self.quantite<50)
+
+    #Méthode pour vérifier si on peut rendre une piéce à partir d'un compartiment
+    def AutoriserAjouterPiece(self):
+        return(self.quantite>50)
 
     #Méthode pour ajouter une piéce au compartiment
-    def ajouterPiece(self):
-        if (self.quantite<50):
+    def AjouterPiece(self):
             self.quantite+=1
-            retutn True
-         return False
 
      #Méthode pour rendre une piéce de monnaie
-    def rendrePiece(self):
-        if (self.quantite>0):
+    def RendrePiece(self):
             self.quantite-=1
-            return True
-        return False
 
     
         
