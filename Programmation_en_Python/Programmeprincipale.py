@@ -89,7 +89,7 @@ def prixFriandise(libelle,listeFriandise):
         #parcourir le tableau, faire le test et retourner le prix
         for friandise in listeFriandise:
             if friandise.libelle==libelle:
-                return libelle.prix
+                return friandise.prix
 
 
 def mettreAjourStockFriandises(libelle,listeFriandise):
